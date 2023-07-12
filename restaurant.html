@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Metas--->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Links-->
+	<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<title>Restaurant</title>
+</head>
+
+<body>
+
+	<!--MOOD RESPONSIVE-->
+
+	<div class="rectangle-blue"></div>
+	<div class="banner-restaurant ">
+		<div class="banner-img"><img src="assets/img/banner.svg" width="100" alt="banner"></div>
+		<div class="container conteiner-content-info">
+			<div class="info-header">
+				<div class="content-banner">
+					<img src="assets/img/logo.png" width="100" alt="logo-rectangle">
+					<h3>Restaurant Nuevo Eden</h3>
+				</div>
+				<div class="icon-hamburge">
+					<img src="assets/img/icons-hamburge.svg" alt="" id="nav-boton">
+					<div class="nav-menu">
+						<ul class="">
+							<li><a href="#"><img src="assets/img/home.svg" alt=""> Inicio</a></li>
+							<li><a href="#"><img src="assets/img/car-menu.svg" alt=""> Carrito de compras</a></li>
+							<li><a href="#"><img src="assets/img/pedidos.svg" alt=""> Mis pedidos</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="input-icons" id="hide-input" style="opacity: 1;">
+					<img src="assets/img/Vector-search.svg" alt="">
+					<input type="text" placeholder="Search...">
+				</div>
+				<div class="iframe">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6300515.913136642!2d-105.782067!3d39.550051!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1646852198008!5m2!1ses!2sve" width="400" height="275" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-content-menu" style="display: flex;">
+		<div class="content-menu">
+			<div class="input-icons">
+				<img src="assets/img/Vector-search.svg" alt="">
+				<input type="text" placeholder="Search...">
+			</div>
+			<div class="content-nav overflow-auto">
+				<ul class="nav nav-content" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary active" id="todos-tab" data-bs-toggle="pill" data-bs-target="#todos" type="button" role="tab" aria-controls="todos" aria-selected="true">TODOS</a></li>
+
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="rice-tab" data-bs-toggle="pill" data-bs-target="#rice" type="button" role="tab" aria-controls="rice" aria-selected="true">ALMUERZOS Y MERIENDAS</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.02." data-bs-toggle="pill" role="tab" aria-selected="False">ARROZ</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="5.01." data-bs-toggle="pill" role="tab" aria-selected="False">BEBIDAS ALCOHOLICAS </a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="5.02." data-bs-toggle="pill" role="tab" aria-selected="False">BEBIDAS NO ALCOHOLICAS (AGUAS)</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="5.03." data-bs-toggle="pill" role="tab" aria-selected="False">BEBIDAS NO ALCOHOLICAS (GASEOSAS)</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.08." data-bs-toggle="pill" role="tab" aria-selected="False">CAZUELA</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.04." data-bs-toggle="pill" role="tab" aria-selected="False">CEVICHE</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.11." data-bs-toggle="pill" role="tab" aria-selected="False">JUGOS</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.06." data-bs-toggle="pill" role="tab" aria-selected="False">MELOSO</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.09." data-bs-toggle="pill" role="tab" aria-selected="False">PLATOS ESPECIALES</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.10." data-bs-toggle="pill" role="tab" aria-selected="False">PORCIONES</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7." data-bs-toggle="pill" role="tab" aria-selected="False">RESTAURANT</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.05." data-bs-toggle="pill" role="tab" aria-selected="False">SANGO</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.01." data-bs-toggle="pill" role="tab" aria-selected="False">SOPAS</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.07." data-bs-toggle="pill" role="tab" aria-selected="False">SUDADOS</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link link-secondary" id="7.03." data-bs-toggle="pill" role="tab" aria-selected="False">TORTILLAS</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+				<div class="main-white">
+					<div class="back-grey">
+						<h4 class="title-content mb-0">Sopa</h4>
+					</div>
+					<ul class="content-menu">
+						<li>
+							<img src="assets/img/soup.png" alt="soup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-menu">
+									<div class="modal-content modal-menu">
+										<div class="modal-header border-0 py-1">
+											<h5 class="modal-title" id="exampleModalLabel">Sopa de Camarones</h5>
+											<button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/close.svg" alt=""></button>
+										</div>
+										<div class="modal-body p-0">
+											<img src="assets/img/prueba.jpg" class="modal-img-menu" alt="soup">
+											<div class="d-block">
+
+
+												<div class="text-menu text-menu-modal ">
+													<h3 class="mb-0">Sopa de camarones</h3>
+													<div class="d-flex justify-content-between mt-2 w-100">
+														<span class="descrip-menu">Shrimp soup</span>
+														<div class="number-order">
+															<span class="btn-control">+</span>
+															<input type="text">
+															<span class="btn-control">-</span>
+														</div>
+													</div>
+													<span class="price mt-2">$ 8.93</span>
+												</div>
+												<div class="back-modal">
+													<p class="modal-title">Comentarios para realizar el pedido</p>
+													<div class="comment-cart">
+														<textarea name="" id="" cols="30" rows="10"></textarea>
+														<button class="btn-Blue ms-auto mt-auto">
+															Añadir a mi carrito de pedidos
+															<img src="assets/img/car.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="rice" role="tabpanel" aria-labelledby="rice-tab">
+				<div class="main-white">
+					<div class="back-grey">
+						<h4 class="title-content mb-0">Mi pedido!</h4>
+					</div>
+					<ul class="content-menu">
+						<li class="add-border">
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93</span>
+								<div class="number-order ms-auto">
+									<span class="btn-control">+</span>
+									<input type="text">
+									<span class="btn-control">-</span>
+								</div>
+							</div>
+						</li>
+						<li class="add-border">
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93</span>
+								<div class="number-order ms-auto">
+									<span class="btn-control">+</span>
+									<input type="text">
+									<span class="btn-control">-</span>
+								</div>
+							</div>
+						</li>
+						<li class="add-border">
+							<img src="assets/img/soup.png" alt="soup">
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93</span>
+								<div class="number-order ms-auto">
+									<span class="btn-control">+</span>
+									<input type="text">
+									<span class="btn-control">-</span>
+								</div>
+							</div>
+						</li>
+					
+
+					</ul>
+					<div class="text-center pb-3">
+
+						<button class="btn-Blue" style="width: 128px; margin-top: 45px;">CONFIRMAR</button>
+					</div>
+				</div>
+				<div class="main-white">
+					<div class="back-grey">
+						<h4 class="title-content mb-0">Ceviche</h4>
+					</div>
+					<ul class="content-menu">
+						<li>
+							<img src="assets/img/soup.png" alt="soup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-menu">
+									<div class="modal-content modal-menu">
+										<div class="modal-header border-0 py-1">
+											<h5 class="modal-title" id="exampleModalLabel">Sopa de Camarones</h5>
+											<button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/close.svg" alt=""></button>
+										</div>
+										<div class="modal-body p-0">
+											<img src="assets/img/prueba.jpg" class="modal-img-menu" alt="soup">
+											<div class="d-block">
+
+
+												<div class="text-menu text-menu-modal ">
+													<h3 class="mb-0">Sopa de camarones</h3>
+													<div class="d-flex justify-content-between mt-2 w-100">
+														<span class="descrip-menu">Shrimp soup</span>
+														<div class="number-order">
+															<span class="btn-control">+</span>
+															<input type="text">
+															<span class="btn-control">-</span>
+														</div>
+													</div>
+													<span class="price mt-2">$ 8.93</span>
+												</div>
+												<div class="back-modal">
+													<p class="modal-title">Comentarios para realizar el pedido</p>
+													<div class="comment-cart">
+														<textarea name="" id="" cols="30" rows="10"></textarea>
+														<button class="btn-Blue ms-auto mt-auto">
+															Añadir a mi carrito de pedidos
+															<img src="assets/img/car.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+
+											<div class="view-order">
+												<div class="cart-view">
+													<span>1</span>
+													<img src="assets/img/car.svg" alt="">
+												</div>
+												<h3>Visualizar mi carrito de pedidos</h3>
+												<span class="price-bottom">$6.7</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-menu">
+								<h3>Sopa de camarones</h3>
+								<span class="price">$ 8.93 <span><img src="assets/img/car.svg" class="vector-car" alt=""></span></span>
+								<div class="d-flex align-items-end">
+
+									<div class="number-order me-auto">
+										<span class="btn-control">+</span>
+										<input type="text">
+										<span class="btn-control">-</span>
+									</div>
+									<div class="add-car">
+										<button class="btn-Blue">Agregar</button>
+									</div>
+								</div>
+							</div>
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-order">
+			<div class="main-order">
+				<h4 class="title-content mb-0 ft-16">Mi Pedido!</h4>
+				<ul>
+					<li>
+						<h4 class="title-content  ft-16">Sopa de camorones</h4>
+						<span class="price">$ 8.93</span>
+						<div class="number-order">
+							<span class="btn-control">+</span>
+							<input type="text">
+							<span class="btn-control">-</span>
+						</div>
+					</li>
+					<li>
+						<h4 class="title-content  ft-16">Sopa de camorones</h4>
+						<span class="price">$ 8.93</span>
+						<div class="number-order">
+							<span class="btn-control">+</span>
+							<input type="text">
+							<span class="btn-control">-</span>
+						</div>
+					</li>
+					<li class="empty-cart">
+					No has añadido productos al carrito...
+					</li>
+				</ul>
+				<button class="btn-Blue mt-auto">Confirmar</button>
+			</div>
+
+			<div class="main-order mt-4">
+				<h4 class="title-content mb-0 ft-16">Mi Pedido!</h4>
+				<ul class="empty-border">
+					<li class="empty-cart">
+					No has añadido productos al carrito...
+					</li>
+				</ul>
+			</div>
+
+			<div class="main-order mt-4">
+				<h4 class="title-content mb-0 ft-16">Ver mis pedidos!</h4>
+				<ul>
+					<li>
+						<h4 class="title-content  ft-16">Pedido N 5544</h4>
+						<a href="" class="link-grey link-secondary">Ver detalles</a>
+						<span class="price link-secondary">$ 8.93</span>
+					</li>
+					<li>
+						<h4 class="title-content  ft-16">Pedido N 5546</h4>
+						<a href="" class="link-grey link-secondary">Ver detalles</a>
+						<span class="price link-secondary">$ 8.93</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="view-order">
+		<div class="cart-view">
+			<span>1</span>
+			<img src="assets/img/car.svg" alt="">
+		</div>
+		<h3>Visualizar mi carrito de pedidos</h3>
+		<span class="price-bottom">$6.7</span>
+	</div>
+	<!-- partial -->
+	<footer class="main-content-menu">
+		<div class="text-copry py-2">
+			<a href="mailto:info@sofadcon.com">info@sofadcon.com</a>
+			<span class="mt-1">CopyRigth SofAdCon Cía Ltda @ 2022</span>
+		</div>
+	</footer>
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+
+	<script src="assets/js/bootstrap.js"></script>
+	<!-- 
+	<script src="assets/js/jquery.min.js"></script> -->
+	<script src="script.js"></script>
+</body>
+
+</html>
